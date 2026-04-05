@@ -25,7 +25,7 @@ DB_NAME = "st67050893_localhost"
 # 🔑 2. ตั้งค่า Hugging Face API (สมอง AI)
 # ==========================================
 #  1. เอา API Key จากเว็บ Hugging Face มาใส่ตรงนี้ (ขึ้นต้นด้วย hf_...)
-HF_TOKEN =  # ใส่ Hugging Face API Token ของคุณที่นี่
+HF_TOKEN = 'apikey' # ใส่ Hugging Face API Token ของคุณที่นี่
 
 
 HF_API_URL = "https://router.huggingface.co/v1/chat/completions"
