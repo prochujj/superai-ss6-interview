@@ -16,16 +16,16 @@ CORS(app)
 # ==========================================
 # ⚙️ 1. ตั้งค่าระบบฐานข้อมูล (XAMPP / MySQL)
 # ==========================================
-DB_HOST = "localhost"
-DB_USER = "st67050893_localhost"
-DB_PASS = "9HFrwSfQ2PxHD8yeYdAa"
-DB_NAME = "st67050893_localhost"
+DB_HOST = os.environ.get("DB_HOST", "localhost")
+DB_USER = os.environ.get("DB_USER", "root")
+DB_PASS = os.environ.get("DB_PASS", "")
+DB_NAME = os.environ.get("DB_NAME", "chatbot")
 
 # ==========================================
 # 🔑 2. ตั้งค่า Hugging Face API (สมอง AI)
 # ==========================================
 #  1. เอา API Key จากเว็บ Hugging Face มาใส่ตรงนี้ (ขึ้นต้นด้วย hf_...)
-HF_TOKEN = "" # ใส่ Hugging Face API Token ของคุณที่นี่
+HF_TOKEN = os.environ.get("HF_TOKEN", "")  # ตั้งค่า Hugging Face token ใน environment variable
 
 
 HF_API_URL = "https://router.huggingface.co/v1/chat/completions"
